@@ -16,9 +16,9 @@ cp wireguard-install.sh /usr/local/bin/
 # Rename after copying
 mv /usr/local/bin/openvpn-install.sh /usr/local/bin/ovpn.sh
 mv /usr/local/bin/wireguard-install.sh /usr/local/bin/wg.sh
-# Move renamed scripts to /root/for_menu
-mv /usr/local/bin/ovpn.sh /root/ovpn.sh-for_menu/
-mv /usr/local/bin/wg.sh /root/wg.sh-for_menu/
+# Move renamed scripts to /usr/local/bin
+mv /usr/local/bin/ovpn.sh /usr/local/bin
+mv /usr/local/bin/wg.sh /usr/local/bin
 # Create move.sh in /usr/local/bin
 cat << 'EOF' > /usr/local/bin/move.sh
 #!/bin/bash
@@ -27,8 +27,8 @@ mv /root/*.ovpn /root/OVPN_Client/ 2>/dev/null
 mv /root/*.conf /root/WG_Client/ 2>/dev/null
 EOF
 # Make all 3 executable
-chmod +x /root/for_menu/ovpn.sh
-chmod +x /root/for_menu/wg.sh
+chmod +x /usr/local/bin/ovpn.sh
+chmod +x /usr/local/bin/wg.sh
 chmod +x /usr/local/bin/move.sh
 echo "Setup completed. All scripts installed and executable."
 echo "ovpn.sh for OpenVPN menu."
