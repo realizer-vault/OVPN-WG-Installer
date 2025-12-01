@@ -1,3 +1,2 @@
-curl -O https://raw.githubusercontent.com/realizer-vault/OVPN-WG/master/.sh
-
-chmod +x openvpn-install.sh
+curl -O https://raw.githubusercontent.com/realizer-vault/OVPN-WG/master/VPN-Installer.sh
+chmod +x VPN-Installer.sh
