@@ -30,6 +30,11 @@ mv /root/*.ovpn /root/OVPN_Client/ 2>/dev/null
 mv /root/*.conf /root/WG_Client/ 2>/dev/null
 EOF
 
+# ==Cleaning & Backup==
+mv /root/openvpn-install.sh /root/ovpn.sh-for_menu/
+mv /root/wireguard-install.sh /root/wg.sh-for_menu/
+rm /root/VPN-Installer.sh
+
 # ==Make all scripts executable==
 chmod +x /usr/local/bin/ovpn.sh
 chmod +x /usr/local/bin/wg.sh
