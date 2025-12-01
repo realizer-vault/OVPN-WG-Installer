@@ -1,9 +1,9 @@
 #!/bin/bash
 # openvpn-install.sh file
-curl -O https://raw.githubusercontent.com/realizer-vault/OVPN-WG-Installer/master/openvpn-install.sh
+curl -O https://raw.githubusercontent.com/realizer-vault/OVPN-WG-Installer/master/Etc/openvpn-install.sh
 chmod +x openvpn-install.sh
 # wireguard-install.sh file
-curl -O https://raw.githubusercontent.com/realizer-vault/OVPN-WG-Installer/master/wireguard-install.sh
+curl -O https://raw.githubusercontent.com/realizer-vault/OVPN-WG-Installer/master/Etc/wireguard-install.sh
 chmod +x wireguard-install.sh
 # Create required folders in /root
 mkdir -p /root/ovpn.sh-for_menu
