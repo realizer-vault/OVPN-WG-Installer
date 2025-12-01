@@ -8,6 +8,7 @@ chmod +x wireguard-install.sh
 # Create required folders in /root
 mkdir -p /root/ovpn.sh-for_menu
 mkdir -p /root/wg.sh-for_menu
+mkdir -p /root/move.sh-for_move_Client_file
 mkdir -p /root/OVPN_Client
 mkdir -p /root/WG_Client
 # Copy install scripts to /usr/local/bin
@@ -16,9 +17,6 @@ cp wireguard-install.sh /usr/local/bin/
 # Rename after copying
 mv /usr/local/bin/openvpn-install.sh /usr/local/bin/ovpn.sh
 mv /usr/local/bin/wireguard-install.sh /usr/local/bin/wg.sh
-# Move renamed scripts to /usr/local/bin
-mv /usr/local/bin/ovpn.sh /usr/local/bin
-mv /usr/local/bin/wg.sh /usr/local/bin
 # Create move.sh in /usr/local/bin
 cat << 'EOF' > /usr/local/bin/move.sh
 #!/bin/bash
